@@ -1,0 +1,31 @@
+Xft*dpi: 96
+Xft*antialias: true
+Xft*rgba: rgb
+Xft*hinting: true
+Xft*hinstyle: hintslight
+Xft*lcdfilter: lcddefault
+!!---------------------------------------------------------------------
+XTerm*termName: xterm-256color
+XTerm*vt100.locale: true
+XTerm*vt100.metaSendsEscape: true
+XTerm*vt100.selectToClipboard: true
+XTerm*faceName: terminus
+XTerm*vt100.internalBorder: 6
+XTerm*vt100.BorderColor: rgb:d0/d0/d0
+XTerm*allowMouseOps: false
+XTerm*faceSize: 10
+XTerm*foreground: rgb:e6/e6/e6
+XTerm*background: rgb:0c/08/07
+XTerm*cursorBlink: true
+!!----------------------------------------------------------------------
+UXTerm*cursorBlink: true
+UXTerm*faceName: terminus
+UXTerm*faceSize: 10
+UXTerm*foreground: rgb:e6/e6/e6
+UXTerm*background: rgb:0c/08/07
+UXTerm*vt100.locale: true
+UXTerm*vt100.metaSendsEscape: true
+UXTerm*vt100.selectToClipboard: true
+UXTerm*vt100.internalBorder: 6
+UXTerm*vt100.BorderColor: rgb:d0/d0/d0
+UXTerm*allowMouseOps: false
