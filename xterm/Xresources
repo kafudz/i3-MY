@@ -5,27 +5,37 @@ Xft*hinting: true
 Xft*hinstyle: hintslight
 Xft*lcdfilter: lcddefault
 !!---------------------------------------------------------------------
-XTerm*termName: xterm-256color
 XTerm*vt100.locale: true
-XTerm*vt100.metaSendsEscape: true
-XTerm*vt100.selectToClipboard: true
-XTerm*faceName: terminus
-XTerm*vt100.internalBorder: 6
-XTerm*vt100.BorderColor: rgb:d0/d0/d0
-XTerm*allowMouseOps: false
-XTerm*faceSize: 10
+XTerm*vt100.utf8: true
+XTerm*vt100.saveLines: 4096
+XTerm*termName: xterm-256color
+XTerm*faceName: JetBrainsMono
+XTerm*faceSize: 9
 XTerm*foreground: rgb:e6/e6/e6
-XTerm*background: rgb:0c/08/07
+XTerm*background: rgb:1C/1C/1C
+XTerm*vt100.translations: #override \
+    Ctrl Shift <Key> C: copy-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key> V: insert-selection(CLIPBOARD)
+XTerm*selectToClipboard: true
+XTerm*vt100.colorBDMode: true
+XTerm*vt100.colorBD: rgb:82/a4/d3
+XTerm*vt100.colorULMode: true
+XTerm*vt100.colorUL: rgb:e4/e4/e4
 XTerm*cursorBlink: true
-!!----------------------------------------------------------------------
-UXTerm*cursorBlink: true
-UXTerm*faceName: terminus
-UXTerm*faceSize: 10
+XTerm*internalBorder: 10
+!!-
+UXTerm*vt100.locale: true
+UXTerm*vt100.utf8: true
+UXTerm*vt100.saveLines: 4096
+UXTerm*termName: uxterm-256color
+UXTerm*faceName: JetBrainsMono
+UXTerm*faceSize: 9
 UXTerm*foreground: rgb:e6/e6/e6
 UXTerm*background: rgb:0c/08/07
-UXTerm*vt100.locale: true
-UXTerm*vt100.metaSendsEscape: true
-UXTerm*vt100.selectToClipboard: true
-UXTerm*vt100.internalBorder: 6
-UXTerm*vt100.BorderColor: rgb:d0/d0/d0
-UXTerm*allowMouseOps: false
+UXTerm*selectToClipboard: true
+UXTerm*vt100.colorBDMode: true
+UXTerm*vt100.colorBD: rgb:82/a4/d3
+UXTerm*vt100.colorULMode: true
+UXTerm*vt100.colorUL: rgb:e4/e4/e4
+UXTerm*cursorBlink: true
+UXTerm*internalBorder: 10
