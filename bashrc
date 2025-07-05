@@ -12,7 +12,8 @@ eval "$(oh-my-posh init bash --config ~/bin/cert.omp.json)"
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-PS1='[\u@\h \W]\$ '
-
 alias clean='sudo pacman -Qdtq | sudo pacman -Rs -'
 alias ll='ls -alF'
+
+# Prompt
+PS1='[\u@\h \W]\$ '
