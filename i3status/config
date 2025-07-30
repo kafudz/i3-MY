@@ -1,53 +1,56 @@
 # i3status configuration file.
 # see "man i3status" for documentation.
+
 # It is important that this file is edited as UTF-8.
 # The following line should contain a sharp s:
 # ß
 # If the above line is not correctly displayed, fix your editor first!
 
 general {
-    colors = true
-    interval = 1
-    color_good = '#ccd2d4'
-    color_degraded = '#fffaa0'
-    color_bad = '#ff4d4d'
+        colors = true
+        interval = 5
+		color_good = '#00ADE6'
+		color_degraded = '#fffaa0'
+		color_bad = '#CCD2D4'
 }
 
-order += "window"
-order += "keyboard_locks"
+#order += "ipv6"
+order += "wireless _first_"
+order += "ethernet _first_"
+#order += "battery all"
 order += "disk /"
-order += "battery all"
-order += "memory"
-order += "tztime local"
-order += "backlight"
+#order += "load"
+#order += "memory"
+#order += "tztime local"
 
-backlight {
-	device = "intel_backlight"
+wireless _first_ {
+        format_up = " : (%quality at %essid)"
+        format_down = " : down"
 }
 
-keyboard_locks {
-    format = '\?color=good [\?if=num_lock NUM  ][\?soft  ]'
-    format += '[\?if=caps_lock CAPS  ][\?soft  ][\?if=scroll_lock SCR]'
-}
-
-window_title {
-    format = '{title}|♥'
+ethernet _first_ {
+        format_up = " : (%speed)"
+        format_down = " : down"
 }
 
 battery all {
-    format = " %status %percentage  %remaining"
+        format = "%status %percentage %remaining"
 }
 
 disk "/" {
-    format = "  %avail"
+        format = "  %used |   %avail"
+}
+
+load {
+        format = "%1min"
 }
 
 memory {
-    format = " %used  %available"
-    threshold_degraded = "1G"
-    format_degraded = "MEMORY < %available"
+        format = "%used | %available"
+        threshold_degraded = "1G"
+        format_degraded = "MEMORY < %available"
 }
 
 tztime local {
-    format = "  %A, %d %B %Y    %H:%M WIB"
+        format = "%Y-%m-%d %H:%M:%S"
 }
