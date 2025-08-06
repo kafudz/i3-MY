@@ -8,19 +8,19 @@
 
 general {
         colors = true
-        interval = 5
-		color_good = '#00ADE6'
-		color_degraded = '#fffaa0'
-		color_bad = '#CCD2D4'
+        interval = 1
+	color_good = '#FCE7C8'
+	color_degraded = '#fffaa0'
+	color_bad = '#CCD2D4'
 }
 
 #order += "ipv6"
 order += "wireless _first_"
 order += "ethernet _first_"
 #order += "battery all"
+order += "memory"
 order += "disk /"
 #order += "load"
-#order += "memory"
 #order += "tztime local"
 
 wireless _first_ {
@@ -38,7 +38,7 @@ battery all {
 }
 
 disk "/" {
-        format = "  %used |   %avail"
+        format = "  %used |    %free"
 }
 
 load {
@@ -46,9 +46,9 @@ load {
 }
 
 memory {
-        format = "%used | %available"
+        format = " %used |  %free"
         threshold_degraded = "1G"
-        format_degraded = "MEMORY < %available"
+        format_degraded = "  MEMORY < %available"
 }
 
 tztime local {
